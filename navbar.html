@@ -31,7 +31,7 @@
        <i class="fas fa-2x fa-sliders-h"></i>
     </button>
     
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand pl-2" href="#">
          <img src="img/amazon_logo_white.png" 
            height="30" width="100" alt="amazonlogo" />
       </a>
@@ -42,7 +42,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
       <!--   form   -->
-       <form class="form-inline" novalidate method="get">
+       <form class="form-inline px-lg-5" novalidate method="get">
            <div class="input-group">
             <div class="input-group-prepend">
               <div class="dropdown">
@@ -65,7 +65,7 @@
               </div>
             
             </div>
-            <input type="text" class="form-control" size="50" name="query" id="query" />
+            <input type="text" class="form-control" size="100" name="query" id="query" />
             <input type="text" name="category" id="category" value="cat" hidden />
             <div class="input-group-append">
               <button type="submit" class="btn btn-warning">
@@ -80,7 +80,7 @@
        </form>
  
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown px-2">
           <a class="nav-link " href="#" 
             id="preferLanguageDropdown" 
             role="button" 
@@ -89,21 +89,68 @@
             <i class="fas fa-2x fa-language" ></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+              <form class="p-2">
+                <div class="dropdown-divider"></div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" 
+                     name="prefLanguage" id="englishLang" value="english" checked>
+                  <label class="form-check-label" for="englishLang">
+                    <img src="img/flag/english.svg" alt="english" height="30" width="50" />
+                  </label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" 
+                     name="prefLanguage" id="hindiLang" value="hindi" checked>
+                  <label class="form-check-label" for="hindiLang">
+                    <img src="img/flag/hindi.png" alt="english" height="30" width="50" />
+                  </label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" 
+                     name="prefLanguage" id="urduLang" value="urdu" checked>
+                  <label class="form-check-label" for="urduLang">
+                    <img src="img/flag/urdu.png" alt="english" height="30" width="50" />
+                  </label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" 
+                     name="prefLanguage" id="bangleLang" value="bangla" checked>
+                  <label class="form-check-label" for="banglaLang">
+                    <img src="img/flag/bangla.jpeg" alt="english" height="30" width="50" />
+                  </label>
+                </div>
+                <div class="dropdown-divider"></div>
+              </form>
           </div>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+<!--Sign Up-->
+
+        <li class="nav-item dropdown px-2">
+          <a class="nav-link " href="#" 
+            id="userAccount" 
+            role="button" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas  fa-2x fa-user-circle" ></i>
+          </a>
+          <div class="dropdown-menu px-3" aria-labelledby="userAccount">
+            <div class="d-flex flex-column justify-content-center">
+              <a href="#" class="btn btn-warning w-75 btn-sm font-weight-bold">
+                Signin
+              </a>
+              <small class="text-muted">New Customer ? <a href="#">Start here.</a></small>
+            </div>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item px-2">
+          <a class="nav-link " href="#"  aria-disabled="true">
+            <i class="fas  fa-2x text-light fa-shopping-cart" ></i>
+            <span class="badge badge-warning badge-pill">10</span>
+          </a>
         </li>
       </ul>
       
