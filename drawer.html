@@ -20,14 +20,13 @@
      <!--Boottrstatp css Local-->
      <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-     <!-- drawer CSS-->
+    <!-- drawer CSS-->
     <link rel="stylesheet" href="css/bootstrap-drawer.min.css" />
-
 
     <!--custom css-->
     <link rel="stylesheet" href="css/custom.css" />
 
-    <title>Amazon : Navbar</title>
+    <title>Amazon : Drawer</title>
   </head>
   <body>
 
@@ -35,52 +34,53 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     
+   
     
     <button class="btn btn-outline-light  class="btn btn-primary" 
-    data-toggle="drawer" data-target="#amazonDrawer"">
-<i class="fas fa-2x fa-sliders-h"></i>
-</button>
+             data-toggle="drawer" data-target="#amazonDrawer"">
+       <i class="fas fa-2x fa-sliders-h"></i>
+    </button>
 
 
 
-<!-- drawer starts-->
+     <!-- drawer starts-->
 
-<div class="drawer drawer-left slide" tabindex="-1" 
-role="dialog" aria-labelledby="drawer-demo-title" 
-   aria-hidden="true" id="amazonDrawer">
-<div class="drawer-content drawer-content-scrollable" role="document">
-   <div class="drawer-header bg-dark text-white">
-     <h4 class="drawer-title mx-auto" id="drawer-demo-title">
-       <i class="fas fa-user-circle"></i>
-       Hello,Sign In
-     </h4>
-   </div>
-   <div class="drawer-body">
-      
-       <h6 class="text-muted text-uppercase">
-            Help & Settings
-       </h6>
-       <a href="#" class="btn btn-outline-success btn-sm my-2">
-           Your Account
-       </a>
-       <a href="login.html" class="btn btn-outline-warning btn-sm my-2">
-           Sign In
-       </a>
-     
-   </div>
-   <div class="drawer-footer">
-       <button type="button" 
-       class="btn btn-outline-danger btn-block btn-sm" 
-         data-dismiss="drawer" aria-label="Close">
-         <i class="fas fa-2x fa-times"></i>
-     </button>
-   </div>
-</div>
-</div>
+     <div class="drawer drawer-left slide" tabindex="-1" 
+         role="dialog" aria-labelledby="drawer-demo-title" 
+            aria-hidden="true" id="amazonDrawer">
+        <div class="drawer-content drawer-content-scrollable" role="document">
+            <div class="drawer-header bg-dark text-white">
+              <h4 class="drawer-title mx-auto" id="drawer-demo-title">
+                <i class="fas fa-user-circle"></i>
+                Hello,Sign In
+              </h4>
+            </div>
+            <div class="drawer-body">
+               
+                <h6 class="text-muted text-uppercase">
+                     Help & Settings
+                </h6>
+                <a href="#" class="btn btn-outline-success btn-sm my-2">
+                    Your Account
+                </a>
+                <a href="login.html" class="btn btn-outline-warning btn-sm my-2">
+                    Sign In
+                </a>
+              
+            </div>
+            <div class="drawer-footer">
+                <button type="button" 
+                class="btn btn-outline-danger btn-block btn-sm" 
+                  data-dismiss="drawer" aria-label="Close">
+                  <i class="fas fa-2x fa-times"></i>
+              </button>
+            </div>
+        </div>
+      </div>
 
 
 
-<!--drawer  ends  -->
+    <!--drawer  ends  -->
     
       <a class="navbar-brand pl-2" href="#">
          <img src="img/amazon_logo_white.png" 
