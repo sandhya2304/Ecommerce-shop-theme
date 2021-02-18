@@ -27,7 +27,7 @@
     <!--custom css-->
     <link rel="stylesheet" href="css/custom.css" />
 
-    <title>Amazon : Login</title>
+    <title>Amazon : Register</title>
   </head>
   <body>
 
@@ -94,6 +94,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
   
 
       <!-- Search bar starts -->
+      
       <!--   form   -->
        <form class="form-inline px-lg-5" novalidate method="get">
            <div class="input-group">
@@ -225,7 +226,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
  
        <!--Navbar end-->
 
-     <!--  login form card start      -->
+     <!--  Register form card start      -->
 
     <div class="container mb-5">
         
@@ -233,11 +234,20 @@ role="dialog" aria-labelledby="drawer-demo-title"
           style="width: 30rem;">
             
             <div class="card-body">
-              <h4 class="card-title">Login</h4>
+              <h4 class="card-title">Create Account</h4>
 
-               <!--login form start here -->
+               <!--Register form start here -->
 
               <form novalidate>
+
+                <div class="form-group">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" name="name" class="form-control"
+                       id="userName" placeholder="abc" aria-describedby="emailHelp">
+                   
+                  </div>
+
+
                 <div class="form-group">
                   <label for="useremail">Email:</label>
                   <input type="email" name="email" class="form-control"
@@ -251,18 +261,36 @@ role="dialog" aria-labelledby="drawer-demo-title"
                   <input type="password" name="password" class="form-control" 
                   placeholder="*****"   id="userPassword" aria-describedby="passwordHelp">
                   <small id="passwordHelp" class="form-text text-muted">
-                    <i class="fas fa-info text-primary"></i>  Password must at least 6 characters </small>
+                      <i class="fas fa-info text-primary"></i>
+                     Password must at least 6 characters </small>
                 </div>
+
+                <div class="form-group">
+                    <label for="userPassword2">Confirm Password: </label>
+                    <input type="password" name="password2" class="form-control" 
+                    placeholder="*****"   id="userPassword2" aria-describedby="passwordHelp2">
+                    <small id="passwordHelp2" class="form-text text-muted">
+                        <i class="fas fa-info text-primary"></i>
+                        Confirm Password must match the above </small>
+                  </div>
                 
-                <button type="submit" class="btn btn-warning w-100 shadow rounded">Submit</button>
+                <button type="submit" 
+                  class="btn btn-warning w-100 shadow rounded">
+                    Register
+                </button>
               </form>
 
-               <!--   login form end      -->
+               <!--   Register form end      -->
 
                <!--  Seprator -->
-               <hr class="hr-text mt-4" data-content="New To Amazon?"/>
 
-               <a href="register.html" class="btn btn-sm btn-dark w-100 mt-3">Register</a>
+                <!--  Seprator -->
+                <hr class="hr-text mt-4" data-content="OR"/>
+
+              <p class="text-center">Already have an account? 
+                   <a href="login.html">Sign In  <i class="fas fa-caret-right"></i></a> 
+            </p> 
+              
                <a href="#" class="btn btn-outline-success btn-sm w-100 mt-2">
                    <i class="fab fa-google">  Sign in with Google</i>
                </a>
@@ -274,7 +302,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
 
     </div>
 
-    <!--   Login Form card Ends -->
+    <!--   Register Form card Ends -->
 
 
 
