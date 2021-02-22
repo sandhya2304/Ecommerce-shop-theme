@@ -60,7 +60,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
        <h6 class="text-muted text-uppercase">
             Help & Settings
        </h6>
-       <a href="#" class="btn btn-outline-success btn-sm my-2">
+       <a href="your_account.html" class="btn btn-outline-success btn-sm my-2">
            Your Account
        </a>
        <a href="login.html" class="btn btn-outline-warning btn-sm my-2">
@@ -203,7 +203,11 @@ role="dialog" aria-labelledby="drawer-demo-title"
               <a href="#" class="btn btn-warning w-75 btn-sm font-weight-bold">
                 Signin
               </a>
-              <small class="text-muted">New Customer ? <a href="#">Start here.</a></small>
+              <small class="text-muted">New Customer ?
+                  <a href="register.html">
+                     Start here.
+                  </a>
+              </small>
             </div>
           </div>
         </li>
@@ -238,12 +242,23 @@ role="dialog" aria-labelledby="drawer-demo-title"
 
                <!--Register form start here -->
 
-              <form novalidate>
+              <form class="needs-validation" 
+                action="#" method="POST" novalidate>
 
                 <div class="form-group">
                     <label for="userName">Your Name:</label>
                     <input type="text" name="name" class="form-control"
-                       id="userName" placeholder="abc" aria-describedby="emailHelp">
+                       id="userName" placeholder="abc" 
+                       aria-describedby="emailHelp" required>
+
+                       <div class="valid-feedback">
+                        <i class="fas fa-thumbs-up" ></i>
+                        Looks good!
+                      </div>
+                       <div class="invalid-feedback">
+                        <i class="fas text-danger fa-exclamation-triangle"></i>
+                          Error in Name
+                      </div>
                    
                   </div>
 
@@ -251,27 +266,60 @@ role="dialog" aria-labelledby="drawer-demo-title"
                 <div class="form-group">
                   <label for="useremail">Email:</label>
                   <input type="email" name="email" class="form-control"
-                     id="useremail" placeholder="abc@gmail.com" aria-describedby="emailHelp">
+                     id="useremail" placeholder="abc@gmail.com" 
+                     aria-describedby="emailHelp" required>
                   <small id="emailHelp" class="form-text text-muted">
                        We'll never share your email with anyone else.
                   </small>
+
+                  <div class="valid-feedback">
+                    <i class="fas fa-thumbs-up" ></i>
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    <i class="fas text-danger fa-exclamation-triangle"></i>
+                      Error in Email
+                  </div>
                 </div>
+
                 <div class="form-group">
                   <label for="userPassword">Password: </label>
                   <input type="password" name="password" class="form-control" 
-                  placeholder="*****"   id="userPassword" aria-describedby="passwordHelp">
+                  placeholder="*****"   id="userPassword" 
+                  aria-describedby="passwordHelp" required>
                   <small id="passwordHelp" class="form-text text-muted">
                       <i class="fas fa-info text-primary"></i>
                      Password must at least 6 characters </small>
+
+                     <div class="valid-feedback">
+                      <i class="fas fa-thumbs-up" ></i>
+                      Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                      <i class="fas text-danger fa-exclamation-triangle"></i>
+                        Error in  password
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label for="userPassword2">Confirm Password: </label>
                     <input type="password" name="password2" class="form-control" 
-                    placeholder="*****"   id="userPassword2" aria-describedby="passwordHelp2">
+                    placeholder="*****"   id="userPassword2" 
+                    aria-describedby="passwordHelp2" required>
                     <small id="passwordHelp2" class="form-text text-muted">
                         <i class="fas fa-info text-primary"></i>
                         Confirm Password must match the above </small>
+
+                        <div class="valid-feedback">
+                          <i class="fas fa-thumbs-up" ></i>
+                          Looks good!
+                        </div>
+
+                        <div class="invalid-feedback">
+                          <i class="fas text-danger fa-exclamation-triangle"></i>
+                            Error in confirm password
+                        </div>
                   </div>
                 
                 <button type="submit" 
@@ -329,5 +377,35 @@ role="dialog" aria-labelledby="drawer-demo-title"
 
     <!--custom js-->
     <script src="js/custom.js"></script>
+
+     <!--validation js -->
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+ 
+
+
+
+    <!--validation  ends -->
+
+
   </body>
 </html>
