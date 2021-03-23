@@ -27,7 +27,7 @@
     <!--custom css-->
     <link rel="stylesheet" href="css/custom.css" />
 
-    <title>Amazon : Your Account</title>
+    <title>Amazon : Your Addresses </title>
   </head>
   <body>
 
@@ -60,7 +60,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
        <h6 class="text-muted text-uppercase">
             Help & Settings
        </h6>
-       <a href="your_account.html" class="btn btn-outline-success btn-sm my-2">
+       <a href="#" class="btn btn-outline-success btn-sm my-2">
            Your Account
        </a>
        <a href="login.html" class="btn btn-outline-warning btn-sm my-2">
@@ -199,11 +199,10 @@ role="dialog" aria-labelledby="drawer-demo-title"
           </a>
           <div class="dropdown-menu px-3" aria-labelledby="userAccount">
             <div class="d-flex flex-column justify-content-center">
-
               <a href="#" class="btn btn-warning w-75 btn-sm font-weight-bold">
                 Signin
               </a>
-              <small class="text-muted">New Customer ? <a href="register.html">Start here.</a></small>
+              <small class="text-muted">New Customer ? <a href="#">Start here.</a></small>
             </div>
           </div>
         </li>
@@ -226,173 +225,95 @@ role="dialog" aria-labelledby="drawer-demo-title"
  
        <!--Navbar end-->
 
-       <!-- Account starts -->
+       <div class="container">
 
-    <div class="container mt-5">
-       <h2>Your Account</h2>
-         
-       <!-- Account Panel Starts-->
-          
-       <div class="row ">
-        <div class="col-md-4">
-            <a href="your_orders.html" class="btn w-100">
+            <!-- breadcrumb starts -->
+      
+       <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb bg-transparent ml-n3">
+          <li class="breadcrumb-item"><a href="your_account.html">Your Account</a></li>
+          <li class="breadcrumb-item active text-danger" aria-current="page">Your Addresses</li>
+        </ol>
+      </nav><!-- breadcrumb ends -->
 
-                <div class="card" >                   
-                    <div class="card-body">
-                        <div class="card-title">
-                            <i class="fas fa-2x fa-shopping-bag text-primary"></i>
-                            <span class="h4">Your Orders</span>
+      <h3>Your Addresses </h3>
 
-
-                            
-                        </div>
-                        <small class="text-muted">
-                            Track, return, or buy things again
-                        </small>
-                     
-                    </div>
-                  </div>
-
-            </a>
-        </div>
-
-        <div class="col-md-4">
-            <a href="change_password.html" class="btn w-100">
-
-                <div class="card" >                   
-                    <div class="card-body">
-                        <div class="card-title">
-                            <i class="fas fa-2x fa-key text-danger"></i>
-                            <span class="h4">Password Change</span>
-                            
-                        </div>
-                        <small class="text-muted">
-                            Change Your Password
-                        </small>
-                     
-                    </div>
-                  </div>
-
-            </a>
-        </div>
-
-        <div class="col-md-4">
-            <a href="your_addresses.html" class="btn w-100">
-
-                <div class="card" >                   
-                    <div class="card-body">
-                        <div class="card-title">
-                            <i class="fas fa-2x fa-map-marked-alt text-secondary"></i>
-                            <span class="h4">Your Addresses</span>
-                            
-                        </div>
-                        <small class="text-muted">
-                            Edit addresses for orders and gifts
-                        </small>
-                     
-                    </div>
-                  </div>
-
-            </a>
-        </div>
-
-       </div>
-
-       <!-- Second Row Starts -->
-         
-       <div class="row ">
-       <div class="col-md-4">
-           <a href="#" class="btn w-100">
-
-               <div class="card" >                   
-                   <div class="card-body">
-                       <div class="card-title">
-                           <i class="fas fa-2x fa-shopping-bag text-warning"></i>
-                           <span class="h4">Payment Options</span>
-                           
-                       </div>
-                       <small class="text-muted">
-                        Edit or add payment methods
-                       </small>
-                    
-                   </div>
-                 </div>
-
-           </a>
-       </div>
-
-       <div class="col-md-4">
-           <a href="#" class="btn w-100">
-
-               <div class="card" >                   
-                   <div class="card-body">
-                       <div class="card-title">
-                           <i class="fas fa-2x fa-key"></i>
-                           <span class="h4">Amazon Pay Balance</span>
-                           
-                       </div>
-                       <small class="text-muted">
-                        Add money to your balance
-                       </small>
-                    
-                   </div>
-                 </div>
-
-           </a>
-       </div>
-
-       <div class="col-md-4">
-           <a href="#" class="btn w-100">
-
-               <div class="card" >                   
-                   <div class="card-body">
-                       <div class="card-title">
-                           <i class="fas fa-2x fa-map-marked-alt text-primary"></i>
-                           <span class="h4">Prime</span>
-                           
-                       </div>
-                       <small class="text-muted">
-                          View benefits and payment settings
-                       </small>
-                    
-                   </div>
-                 </div>
-
-           </a>
-       </div>
-
-      </div>
-
-        
-       <!--  second Row ends here -->
-
-       <!-- Account Panel Ends-->
-
-       <hr/>
-
+      <!-- Address card 1 -->
+       
       <div class="row">
           <div class="col-md-4">
-              <div class="card">
-                  <div class="card-body">
-                    <div class="card-title font-weight-bold">
-                         Digital content and devices
-                         <div class="d-flex flex-column">
-                            <a href="">Apps and more</a>
-                            <a href="">Content and Devices</a>
-                            <a href="">Digital gifts</a>
-                         </div>
-                   </div> 
-                 
-              </div>
+            <a href="#" class="btn btn-transparent m-0 p-0">
+               
+                <div class="card" style="width: 320px;height: 266px; border: 2px dashed #C7C7C7;">
+                  
+                    <div class="card-body " style="padding-top: 70px;">
+                      <i class="fas fa-plus fa-3x" style="color:#C7C7C7;"></i> 
+                      <h5 class="card-title">Add Address </h5>
+                      
+                    </div>
+                  </div>
+
+            </a>
 
           </div>
 
+     <!-- Address Card 2-->
+ 
+     <div class="col-md-4">  
+            
+            <div class="card" style="width: 320px;height: 266px;">
+               <div class="card-header bg-transparent">
+                    <p class="text-muted p-0 m-0">Default : 
+                         <i class="fab fa-amazon text-warning"> </i>
+                    </p>
+               </div>
+                <div class="card-body m-0 py-0" >
+                   <p class="font-weight-bold ">Sandhya Sharma</p>
+                       <p class="my-0 py-0"> H-122 Navi Mumbai, 112001 </p>
+                       <p class="my-0 py-0">India</p> 
+                       <p class="my-0 py-0">Phone number: 123456789</p>
+                        
+                   <a href="#" class="btn-sm">Add delivery instructions</a>
+                  
+                </div>
+                <div  class="card-footer bg-transparent">
+                  <a href="#" class="btn btn-outline-info btn-sm ">Edit</a> |
+                  <a href="#" class="btn btn-outline-danger btn-sm btn">Remove</a>
+                </div>
+              </div>
       </div>
 
-    </div>
+     <!-- Address Card 3-->
+ 
+     <div class="col-md-4">  
+            
+        <div class="card" style="width: 320px;height: 266px;">
+           <div class="card-header bg-transparent">
+                <p class="text-muted p-0 m-0">Default : 
+                     <i class="fab fa-amazon text-warning"> </i>
+                </p>
+           </div>
+            <div class="card-body m-0 py-0" >
+               <p class="font-weight-bold ">Ram Sharma</p>
+                   <p class="my-0 py-0">Delhi, 112001 </p>
+                   <p class="my-0 py-0">India</p> 
+                   <p class="my-0 py-0">Phone number: 123456789</p>
+                    
+               <a href="#" class="btn-sm">Add delivery instructions</a>
+              
+            </div>
+            <div  class="card-footer bg-transparent">
+              <a href="#" class="btn btn-outline-info btn-sm ">Edit</a> |
+              <a href="#" class="btn btn-outline-danger btn-sm btn">Remove</a> |
+              <a href="#" class="btn  btn-sm btn">Set as Default</a>
+            </div>
+          </div>
 
-  
+  </div>
 
+      </div>
+
+       </div>
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
