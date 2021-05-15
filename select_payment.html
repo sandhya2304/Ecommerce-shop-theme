@@ -296,7 +296,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
                 <div class="card  p-2" >
                     
                     <div class="card-body">
-                        <table class="table">
+                        <table class="table table-responsive-md table-sm table-hover">
                             <thead>
                               <tr>
                                 <th >Your saved credit and debit cards</th>
@@ -309,16 +309,22 @@ role="dialog" aria-labelledby="drawer-demo-title"
                                 
                               <tr>
                                 <td >
-                                    <input class="form-check-input mx-0" type="radio" name="paymentMethod" id="paymentMethod" value="paytm" checked>
-                                </td>
+                                  <label for="paymentMethod">
+                                    <input class="form-check-input mx-0 mt-4" type="radio" name="paymentMethod" id="paymentMethod" value="paytm" checked>
+                                    <img src="img/paytmlogo.png" class="ml-3 mt-n1" alt="paytm" width="100" height="100" />
+                                  </label>
+                                  </td>
                                 <td>PayTM</td>
                                 <td>Local</td>
                                 
                               </tr>
                               <tr>
                                 <td >
-                                    <input class="form-check-input mx-0" type="radio" name="paymentMethod" id="paymentMethod" value="gpay" >
-                                </td>
+                                  <label for="paymentMethod">
+                                    <input class="form-check-input mx-0 mt-4" type="radio" name="paymentMethod" id="paymentMethod" value="gpay" >
+                                    <img src="img/gpayyy.png" alt="gpay" class="ml-3 mt-n1" width="100" height="100" />
+                                  </label>
+                                  </td>
                                 <td>Google</td>
                                 <td>International</td>
                                
@@ -333,7 +339,7 @@ role="dialog" aria-labelledby="drawer-demo-title"
             <!--continue  -->
             <div class="col-md-4">
 
-                <div class="card">                  
+                <div class="card my-3 my-md-0">                  
                     <div class="card-body text-center " style="background-color: #f7f7f7;">
                        <button class="btn btn-warning btn-block btn-sm">
                            Continue
